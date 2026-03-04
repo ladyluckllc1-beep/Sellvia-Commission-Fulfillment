@@ -1,0 +1,137 @@
+=== Sellvia Commission Manager ===
+Contributors: Top Hits Emporium
+Tags: sellvia, orders, commission, payment, woocommerce
+Requires at least: 5.0
+Tested up to: 6.4
+Stable tag: 1.0.0
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+
+Process Sellvia orders using your pending commission balance instead of credit card or deposit.
+
+== Description ==
+
+Sellvia Commission Manager allows you to:
+
+* View all your Sellvia orders in one dashboard
+* Monitor your commission balance (pending, available, total)
+* Process orders using commission balance with one click
+* Automatic order status updates
+* Secure API communication via Supabase
+
+== Installation ==
+
+AUTOMATIC INSTALLATION (Recommended):
+
+1. Login to your WordPress admin: https://tophitsemporium.shop/wp-admin
+2. Go to Plugins > Add New > Upload Plugin
+3. Choose the wordpress-plugin.zip file
+4. Click Install Now
+5. Click Activate Plugin
+6. Access via WordPress Admin > Sellvia Orders
+
+MANUAL INSTALLATION:
+
+1. Upload the 'sellvia-commission-manager' folder to '/wp-content/plugins/'
+2. Activate the plugin through the 'Plugins' menu in WordPress
+3. Click 'Sellvia Orders' in the admin menu
+
+== Configuration ==
+
+NO CONFIGURATION REQUIRED! The plugin is pre-configured with your React app URL.
+
+If you need to change the React app URL:
+1. Edit sellvia-commission-manager.php
+2. Find line 56
+3. Update the URL to your custom domain
+
+== Usage ==
+
+1. Login to WordPress Admin
+2. Click "Sellvia Orders" in the left menu
+3. View your commission balance
+4. Click "Pay with Commission" next to any order
+5. Order is automatically processed and commission deducted
+
+== Features ==
+
+* One-click order processing with commission balance
+* Real-time commission balance display
+* Automatic order status synchronization
+* Secure server-side API communication
+* Beautiful responsive interface
+* Order filtering and search
+* Status badges and visual indicators
+
+== Requirements ==
+
+* WordPress 5.0 or higher
+* PHP 7.4 or higher
+* Active Sellvia account with API credentials
+* WooCommerce (recommended)
+
+== Frequently Asked Questions ==
+
+Q: Do I need to configure API keys?
+A: No! API keys are already configured securely in the backend.
+
+Q: What if I don't have enough commission balance?
+A: The system will show an error. You'll need to use credit card or wait for more commissions.
+
+Q: Can I reverse a processed order?
+A: No, once processed, orders cannot be reversed. Contact Sellvia support if needed.
+
+Q: Is my data secure?
+A: Yes! All API communication is encrypted and API keys are stored securely in Supabase.
+
+== Screenshots ==
+
+1. Commission balance overview
+2. Orders table with process button
+3. One-click order processing
+4. Order status updates
+
+== Changelog ==
+
+= 1.0.0 (March 2, 2026) =
+* Initial release
+* Order management dashboard
+* Commission balance payment integration
+* WordPress admin menu integration
+* REST API webhooks
+* Secure Supabase backend
+
+== Upgrade Notice ==
+
+= 1.0.0 =
+Initial release - no upgrade needed
+
+== Support ==
+
+For support, check the documentation files:
+* SETUP_GUIDE.md - Complete setup instructions
+* QUICK_START.md - Daily usage guide
+* README.md - Plugin overview
+
+== Developer Notes ==
+
+This plugin integrates with:
+* React frontend (hosted separately)
+* Supabase backend for API communication
+* Sellvia API for order processing
+
+The plugin is designed to be simple and maintenance-free. All business logic is handled in the React app and Supabase Edge Functions.
+
+== Privacy Policy ==
+
+This plugin:
+* Does not collect user data
+* Does not use cookies
+* Does not track analytics
+* Only communicates with Sellvia API for order processing
+* All API credentials are encrypted in Supabase
+
+== Credits ==
+
+Built with Enter.pro
+React + Supabase + WordPress integration
